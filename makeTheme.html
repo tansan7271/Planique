@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="오직 나만의 특별한 맞춤형 플래너" />
+        <meta name="author" content="김도균(20225525)" />
+        <title>Planique &middot; 플래너 만들기</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="js/scripts.js"></script>
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav id="navbar" class="navbar force-shadow navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="로고" style="height: 40px;"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link koreanBold" href="makeTheme.html">플래너 만들기</a></li>
+                            <li class="nav-item"><a class="nav-link koreanBold" href="viewList.html">플래너 탐색하기</a></li>
+                            <li class="nav-item"><a class="nav-link koreanBold" href="myList.html">마이 페이지</a></li>
+                            <li class="nav-item"><a class="nav-link koreanBold" href="support.html">고객지원</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Projects Section-->
+<div class="breadcrumb-container koreanRegular">
+<nav style="--bs-breadcrumb-divider: '▸';" aria-label="breadcrumb" class="d-flex justify-content-between align-items-center">
+    <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item active" style="color:#e65c8a;"><b>시작 테마 선택</b></li>
+        <li class="breadcrumb-item active" aria-current="page">삽입할 페이지 선택</li>
+        <li class="breadcrumb-item active" aria-current="page">페이지 내부 요소 편집</li>
+        <li class="breadcrumb-item active" aria-current="page">최종 확인 및 저장</li>
+    </ol>
+    <button type="button" class="btn btn-primary" onclick="location.href='makePage.html'">다음으로 <i class="bi bi-caret-right-fill"></i></button>
+</nav>
+</div>
+<section class="py-5">
+<section class="py-5">
+    <div class="container px-5 mb-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0">
+                <span class="text-gradient d-inline koreanBold">새로운 나만의 노트를 만듭니다.</span>
+            </h1>
+            <p class="lead fw-normal text-muted mb-0 koreanRegular"><br>
+                먼저, 당신의 전반적인 라이프스타일을 알려 주세요!<br>
+                선택한 테마에 맞춘 최적의 양식을 선택해드리겠습니다.<br><br>
+            </p>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-11 col-xl-9 col-xxl-8">
+
+                <!-- 카드 1 -->
+                <div class="position-relative mb-5">
+                    <div class="card overflow-hidden shadow rounded-4 border-0 d-flex flex-row align-items-center">
+                        <div class="p-5 flex-grow-1">
+                            <h2 class="fw-bolder koreanBold">나는 아침형 인간입니다.</h2>
+                            <p class="koreanRegular">이른 시간에 집중력이 올라오는 당신을 위한 플래너.<br>하루의 시작을 계획하며 안정된 루틴을 만들어보세요.</p>
+                        </div>
+                        <img class="img-fluid" src="assets/cards/c1.png" alt="..." style="max-width: 300px; height: auto;">
+                    </div>
+                    <div class="position-absolute top-50 translate-middle-y" style="right: -4rem;">
+                        <input type="radio" class="custom-radio" name="projectSelect" id="project1">
+                    </div>
+                </div>
+
+                <!-- 카드 2 -->
+                <div class="position-relative mb-5">
+                    <div class="card overflow-hidden shadow rounded-4 border-0 d-flex flex-row align-items-center">
+                        <div class="p-5 flex-grow-1">
+                            <h2 class="fw-bolder koreanBold">나는 저녁형 인간입니다.</h2>
+                            <p class="koreanRegular">늦은 시간에 몰입하는 야행성 라이프에 맞춘 구성.<br>조용한 밤의 집중력을 효율적으로 활용할 수 있어요.</p>
+                        </div>
+                        <img class="img-fluid" src="assets/cards/c2.png" alt="..." style="max-width: 300px; height: auto;">
+                    </div>
+                    <div class="position-absolute top-50 translate-middle-y" style="right: -4rem;">
+                        <input type="radio" class="custom-radio" name="projectSelect" id="project2">
+                    </div>
+                </div>
+
+                <div class="position-relative mb-5">
+                    <div class="card overflow-hidden shadow rounded-4 border-0 d-flex flex-row align-items-center">
+                        <div class="p-5 flex-grow-1">
+                            <h2 class="fw-bolder koreanBold">나는 초월적 인간입니다.</h2>
+                            <p class="koreanRegular">24시간 종일 분산된 스케줄을 깔끔히 정리하도록 설계.<br>예측 불가능한 일정도 유연하게 조절할 수 있습니다.
+                        </div>
+                        <img class="img-fluid" src="assets/cards/c3.png" alt="..." style="max-width: 300px; height: auto;">
+                    </div>
+                    <div class="position-absolute top-50 translate-middle-y" style="right: -4rem;">
+                        <input type="radio" class="custom-radio" name="projectSelect" id="project3">
+                    </div>
+                </div>
+                <br><hr><br><br><br>
+                <div class="position-relative mb-5">
+                    <div class="card cardNarrow overflow-hidden shadow rounded-4 border-0 d-flex flex-row align-items-center">
+                        <div class="p-5 flex-grow-1">
+                            <h2 class="fw-bolder koreanBold">공부 &middot; 학습</h2>
+                            <p class="koreanRegular">과제, 시험, 스터디 계획까지 완벽히 관리해보세요.<br>학습 목표 설정부터 복습 체크까지 한눈에 볼 수 있어요.
+                        </div>
+                        <img class="img-fluid" src="assets/cards/c4.png" alt="..." style="max-width: 300px; height: auto;">
+                    </div>
+                    <div class="position-absolute top-50 translate-middle-y" style="right: -4rem;">
+                        <input type="radio" class="custom-radio2" name="typeSelect" id="project1">
+                    </div>
+                </div>
+
+                <div class="position-relative mb-5">
+                    <div class="card cardNarrow overflow-hidden shadow rounded-4 border-0 d-flex flex-row align-items-center">
+                        <div class="p-5 flex-grow-1">
+                            <h2 class="fw-bolder koreanBold">업무</h2>
+                            <p class="koreanRegular">프로젝트, 회의록, 할 일을 효율적으로 정리합니다.<br>업무 흐름을 체계적으로 관리하며 생산성을 높이세요.
+                        </div>
+                        <img class="img-fluid" src="assets/cards/c5.png" alt="..." style="max-width: 300px; height: auto;">
+                    </div>
+                    <div class="position-absolute top-50 translate-middle-y" style="right: -4rem;">
+                        <input type="radio" class="custom-radio2" name="typeSelect" id="project1">
+                    </div>
+                </div>
+
+                <div class="position-relative mb-5">
+                    <div class="card cardNarrow overflow-hidden shadow rounded-4 border-0 d-flex flex-row align-items-center">
+                        <div class="p-5 flex-grow-1">
+                            <h2 class="fw-bolder koreanBold">가계 &middot; 금융</h2>
+                            <p class="koreanRegular">지출, 예산, 청구서를 깔끔하게 기록하세요.<br>생활비 흐름을 한눈에 파악하고 예산 관리에 도움을 줍니다.
+                        </div>
+                        <img class="img-fluid" src="assets/cards/c6.png" alt="..." style="max-width: 300px; height: auto;">
+                    </div>
+                    <div class="position-absolute top-50 translate-middle-y" style="right: -4rem;">
+                        <input type="radio" class="custom-radio2" name="typeSelect" id="project1">
+                    </div>
+                </div>
+
+                <div class="position-relative mb-5">
+                    <div class="card cardNarrow overflow-hidden shadow rounded-4 border-0 d-flex flex-row align-items-center">
+                        <div class="p-5 flex-grow-1">
+                            <h2 class="fw-bolder koreanBold">취미 &middot; 창작</h2>
+                            <p class="koreanRegular">아이디어 기록부터 작업 스케줄까지 한눈에!<br>즐거운 취미 시간을 더 체계적이고 의미 있게 만들어보세요.
+                        </div>
+                        <img class="img-fluid" src="assets/cards/c7.png" alt="..." style="max-width: 300px; height: auto;">
+                    </div>
+                    <div class="position-absolute top-50 translate-middle-y" style="right: -4rem;">
+                        <input type="radio" class="custom-radio2" name="typeSelect" id="project1">
+                    </div>
+                </div>
+
+                                <div class="position-relative mb-5">
+                    <div class="card cardNarrow overflow-hidden shadow rounded-4 border-0 d-flex flex-row align-items-center">
+                        <div class="p-5 flex-grow-1">
+                            <h2 class="fw-bolder koreanBold">헬스 &middot; 건강</h2>
+                            <p class="koreanRegular">운동, 식단, 루틴을 꾸준히 관리할 수 있도록 도와줍니다.<br>작은 습관들이 쌓여 건강한 변화를 만들어갑니다.
+                        </div>
+                        <img class="img-fluid" src="assets/cards/c8.png" alt="..." style="max-width: 300px; height: auto;">
+                    </div>
+                    <div class="position-absolute top-50 translate-middle-y" style="right: -4rem;">
+                        <input type="radio" class="custom-radio2" name="typeSelect" id="project1">
+                    </div>
+                </div>
+
+                                <div class="position-relative mb-5">
+                    <div class="card cardNarrow overflow-hidden shadow rounded-4 border-0 d-flex flex-row align-items-center">
+                        <div class="p-5 flex-grow-1">
+                            <h2 class="fw-bolder koreanBold">마음 챙기기</h2>
+                            <p class="koreanRegular">	감정일기, 감사노트, 하루의 기분을 기록하세요.<br>스스로를 돌아보며 작은 평온함을 쌓아갈 수 있습니다.
+                        </div>
+                        <img class="img-fluid" src="assets/cards/c9.png" alt="..." style="max-width: 300px; height: auto;">
+                    </div>
+                    <div class="position-absolute top-50 translate-middle-y" style="right: -4rem;">
+                        <input type="radio" class="custom-radio2" name="typeSelect" id="project1">
+                    </div>
+                </div>
+
+                                <div class="position-relative mb-5">
+                    <div class="card cardNarrow overflow-hidden shadow rounded-4 border-0 d-flex flex-row align-items-center">
+                        <div class="p-5 flex-grow-1">
+                            <h2 class="fw-bolder koreanBold">자기계발</h2>
+                            <p class="koreanRegular">장기 목표와 성취를 단계별로 체크해보세요.<br>성장의 과정을 눈으로 확인하며 동기부여를 유지하세요.
+                        </div>
+                        <img class="img-fluid" src="assets/cards/c10.png" alt="..." style="max-width: 300px; height: auto;">
+                    </div>
+                    <div class="position-absolute top-50 translate-middle-y" style="right: -4rem;">
+                        <input type="radio" class="custom-radio2" name="typeSelect" id="project1">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+            <!-- Call to action section-->
+            <section class="py-5 bg-gradient-primary-to-secondary text-white">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="display-4 fw-bolder mb-4 koreanBold">찾는 테마가 없으신가요?</h2>
+                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="support.html">고객지원 페이지에 기능 제안 남기기</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 koreanRegular">Copyright &copy; 중앙대학교 예술공학대학 예술공학부 김도균(20225525) &middot; 2025</div></div>
+                    <div class="col-auto koreanRegular">
+                        tansan7271@cau.ac.kr &middot;
+                        <a class="small koreanRegular" href="support.html">고객지원</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
