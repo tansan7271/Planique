@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="오직 나만의 특별한 맞춤형 플래너" />
+        <meta name="author" content="김도균(20225525)" />
+        <title>Planique &middot; 고객지원</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src = "js/scripts.js"></script>
+        <style>
+            .template-card2 {
+                width: 300px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                cursor: pointer; padding: 10px; border: 1px solid #d1d1d1;
+            }
+
+            .template-card2 .card-body p { 
+                margin-top: 10px; 
+            }
+
+            .template-card2:hover {
+                transform: scale(1.05); border-color: #e67e7e; box-shadow: 0 12px 35px rgba(230,126,126,0.3);
+            }
+        </style>
+    </head>
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav id = "navbar" class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="로고" style="height: 40px;"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link koreanBold" href="makeTheme.html">플래너 만들기</a></li>
+                            <li class="nav-item"><a class="nav-link koreanBold" href="viewList.html">플래너 탐색하기</a></li>
+                            <li class="nav-item"><a class="nav-link koreanBold" href="myList.html">마이 페이지</a></li>
+                            <li class="nav-item"><a class="nav-link koreanBold" href="support.html">고객지원</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <section class="py-5">
+                <div class="container px-5">
+                    <!-- Contact form-->
+                    <div class="bg-light rounded-4 py-5 px-4 px-md-5">
+                        <div class="text-center mb-5">
+                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-patch-question-fill"></i></i></div>
+                            <h1 class="fw-bolder koreanBold">도움이 필요하신가요?</h1>
+                            <p class="lead fw-normal text-muted mb-0 koreanRegular">아래는 몇 가지 자주 문의되는 질문들입니다.</p>
+                        </div>
+
+                <div class="text-center mt-4 d-flex justify-content-center gap-3 flex-wrap">
+                    <button type="button" class="btn btn-primary template-card2 koreanBold" onclick="location.href='myDelivery.html'">실물 상품 배송 현황 확인하기</button>
+                    <button type="button" class="btn btn-outline-primary template-card2 koreanBold" onclick="location.href='myFile.html'">PDF 파일 주문 현황 확인하기</button>
+                </div>
+                <br><br>
+
+
+                        
+                        <div class="accordion koreanRegular" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Planique가 어떤 웹사이트인가요?
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                “오직 나만의 특별한(Unique) 맞춤형 플래너(Planner) 주문제작 웹사이트”
+                                <br>플래닉에서는 사용자가 쉽고 간단하게 스스로의 라이프스타일에 꼭 맞는 플래너를 구성하여 주문 제작할 수 있습니다.
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Planique의 사용 방법이 궁금합니다!
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                1. 메인 페이지나 상단 내비게이션 바의 '플래너 만들기'를 선택합니다.<br>
+                                2. 플래너 만들기 화면에서 나만의 플래너에 넣고자 하는 페이지를 선택하여 장바구니에 담습니다<br>
+                                3. 장바구니에 담은 페이지들 중 세부적인 구성 요소를 편집하고자 하는 페이지를 클릭하여 내용이나 크기, 규격 등을 입맛에 맞게 편집합니다.<br>
+                                4. 최종적으로 만들어질 플래너 미리보기를 검토한 후 결제 및 주문합니다
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                배송 예상 시간과 발송처가 궁금합니다!
+                            </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                &middot; 나만의 플래너는 주문 접수와 동시에 제작이 시작됩니다.<br>
+                                &middot; 선택하신 페이지와 옵션 수에 따라 프린트 및 제조 공정은 최대 2~3영업일 정도 소요될 수 있습니다.<br>
+                                &middot; 배송은 우체국택배로 발송하며 배송 상황은 택배사의 사정에 따라 변경될 수 있습니다.
+                            </div>
+                            </div>
+                        </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                지금은 6월이지만 1년 단위 플래너를 사기엔 절반을 버려야 해서 너무 아깝습니다!
+                            </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                플래너 만들기 페이지에서 담고자 하는 달력 페이지를 선택한 후, 장바구니에 담긴 세부 구성 요소 편집 버튼을 누르면 플래너에 담을 월 수를 조정할 수 있습니다.<br>
+                                필요한 만큼만 골라 사용하세요.
+                            </div>
+                            </div>
+                        </div>
+
+                                <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                제 글씨 크기보다 플래너 양식의 칸이 너무 작아서 불편합니다!
+                            </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                플래너 만들기 페이지에서 담고자 하는 노트 페이지를 선택한 후, 장바구니에 담긴 세부 구성 요소 편집 버튼을 누르면 해당 페이지의 줄나눔 크기를 바꿀 수 있습니다.<br>
+                                본인의 글씨체 크기에 편안하게 맞도록 크기를 늘려 사용하세요.
+                            </div>
+                            </div>
+                        </div>
+
+                                    <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                열심히 만든 플래너 템플릿을 디지털 기기에서도 사용하고 싶습니다!
+                            </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                나만의 플래너를 만든 후, 최종 검토 화면에서 실물 상품으로 주문할지 PDF 파일로 내려받을지 선택할 수 있습니다.
+                            </div>
+                            </div>
+                        </div>
+
+                        </div>
+
+                        <div class="text-center mb-5">
+                            <h1 class="fw-bolder koreanBold"><br>아직 궁금증이 해결되지 않으셨나요?</h1>
+                            <p class="lead fw-normal text-muted mb-0 koreanRegular">아래 양식에 문의사항을 작성해주세요.<br>성실히 검토한 후 남겨주신 연락처로 답장 드리겠습니다.</p>
+                        </div>
+
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-8 col-xl-6">
+                                <!-- * * * * * * * * * * * * * * *-->
+                                <!-- * * SB Forms Contact Form * *-->
+                                <!-- * * * * * * * * * * * * * * *-->
+                                <!-- This form is pre-integrated with SB Forms.-->
+                                <!-- To make this form functional, sign up at-->
+                                <!-- https://startbootstrap.com/solution/contact-forms-->
+                                <!-- to get an API token!-->
+                                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                    <!-- Name input-->
+                                    <div class="form-floating mb-3 koreanRegular">
+                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                        <label for="name">성명</label>
+                                        <div class="invalid-feedback" data-sb-feedback="name:required">성명을 입력해주세요.</div>
+                                    </div>
+                                    <!-- Email address input-->
+                                    <div class="form-floating mb-3 koreanRegular">
+                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                        <label for="email">이메일 주소</label>
+                                        <div class="invalid-feedback" data-sb-feedback="email:required">이메일 주소를 입력해주세요.</div>
+                                        <div class="invalid-feedback" data-sb-feedback="email:email">올바르지 않은 이메일 형식입니다.</div>
+                                    </div>
+                                    <!-- Phone number input-->
+                                    <div class="form-floating mb-3 koreanRegular">
+                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                        <label for="phone">전화번호</label>
+                                        <div class="invalid-feedback" data-sb-feedback="phone:required">전화번호를 입력해주세요.</div>
+                                    </div>
+                                    <!-- Message input-->
+                                    <div class="form-floating mb-3 koreanRegular">
+                                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                        <label for="message">메시지</label>
+                                        <div class="invalid-feedback" data-sb-feedback="message:required">문의사항을 입력해주세요.</div>
+                                    </div>
+                                    <!-- Submit success message-->
+                                    <!---->
+                                    <!-- This is what your users will see when the form-->
+                                    <!-- has successfully submitted-->
+                                    <div class="d-none koreanRegular" id="submitSuccessMessage">
+                                        <div class="text-center mb-3">
+                                            <div class="fw-bolder">성공적으로 전송되었습니다!</div>
+                                            빠른 시일 내에 성실히 검토한 후 답장 드리겠습니다.
+                                            <br />
+                                        </div>
+                                    </div>
+                                    <!-- Submit error message-->
+                                    <!---->
+                                    <!-- This is what your users will see when there is-->
+                                    <!-- an error submitting the form-->
+                                    <div class="d-none koreanRegular" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                                    <!-- Submit Button-->
+                                    <div class="d-grid koreanRegular"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">문의 전송하기</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 koreanRegular">Copyright &copy; 중앙대학교 예술공학대학 예술공학부 김도균(20225525) &middot; 2025</div></div>
+                    <div class="col-auto koreanRegular">
+                        tansan7271@cau.ac.kr &middot;
+                        <a class="small koreanRegular" href="support.html">고객지원</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

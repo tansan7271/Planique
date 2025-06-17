@@ -1,0 +1,172 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="오직 나만의 특별한 맞춤형 플래너" />
+    <meta name="author" content="김도균(20225525)" />
+    <title>Planique &middot; 마이 페이지</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/scripts.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+    <style>
+        .sticky-summary {
+            position: sticky;
+            top: 100px;
+            z-index: 10;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .template-card2 {
+            width: 200px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer; padding: 10px; border: 1px solid #d1d1d1;
+        }
+
+        .template-card2 .card-body p { 
+            margin-top: 10px; 
+        }
+
+        .template-card2:hover {
+            transform: scale(1.05); border-color: #e67e7e; box-shadow: 0 12px 35px rgba(230,126,126,0.3);
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column h-100">
+<main class="flex-shrink-0">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container px-5">
+            <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="로고" style="height: 40px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                    <li class="nav-item"><a class="nav-link koreanBold" href="makeTheme.html">플래너 만들기</a></li>
+                    <li class="nav-item"><a class="nav-link koreanBold" href="viewList.html">플래너 탐색하기</a></li>
+                    <li class="nav-item"><a class="nav-link koreanBold" href="myList.html">마이 페이지</a></li>
+                    <li class="nav-item"><a class="nav-link koreanBold" href="support.html">고객지원</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container px-5 mb-5">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bolder mb-0">
+                    <span class="text-gradient d-inline koreanBold">나의 플래너 주문하기.</span>
+                </h1>
+                <p class="lead fw-normal text-muted mb-0 koreanRegular"><br>
+                    아래 양식에 맞춰 필요한 정보를 입력해주세요.<br>
+                    고객님의 손에 제품이 도착할때까지 최선을 다하겠습니다.<br><br>
+                </p>
+            </div>
+
+
+<div class="sticky-summary d-flex justify-content-between align-items-center flex-wrap" style="gap: 20px;">
+    <div class="flex-grow-1">
+        <h4 class="fw-bold koreanBold mb-2">식단 & 운동 관리 임시 1</h4>
+        <p class="text-muted koreanRegular mb-0">내가 직접 만든 플래너</p>
+    </div>
+</div>
+
+            <form style="padding-left: 10px; padding-right: 10px;">
+
+                <div class="mb-3">
+                    <label for="name" class="form-label koreanBold">수령인 이름</label>
+                    <input type="text" class="form-control koreanRegular" id="name" placeholder="이름 입력">
+                </div>
+
+                <div class="mb-3">
+                    <label for="phone" class="form-label koreanBold">연락처</label>
+                    <input type="tel" class="form-control koreanRegular" id="phone" placeholder="010-0000-0000">
+                </div>
+
+                <div class="mb-3">
+                    <label for="address" class="form-label koreanBold">배송 주소</label>
+                    <input type="text" class="form-control koreanRegular" id="address" placeholder="도로명 주소 입력">
+                </div>
+
+                <div class="mb-3">
+                    <label for="request" class="form-label koreanBold">배송 요청사항</label>
+                    <textarea class="form-control koreanRegular" id="request" rows="3" placeholder="요청사항 입력 (선택사항)"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="quantity" class="form-label koreanBold">수량 선택</label>
+                    <input type="number" class="form-control koreanRegular" id="quantity" value="1" min="1">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label koreanBold">결제 방법</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input koreanRegular" type="radio" name="paymentMethod" id="creditCard" value="credit" checked>
+                        <label class="form-check-label" for="creditCard">신용카드</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input koreanRegular" type="radio" name="paymentMethod" id="kakaoPay" value="kakao">
+                        <label class="form-check-label" for="kakaoPay">카카오페이</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input koreanRegular" type="radio" name="paymentMethod" id="naverPay" value="naver">
+                        <label class="form-check-label" for="naverPay">네이버페이</label>
+                    </div>
+                </div>
+
+                <div class="sticky-summary d-flex justify-content-between align-items-center flex-wrap" style="gap: 20px;">
+                    <div class="flex-grow-1">
+                        <h5 class="fw-bold koreanBold">총 결제 금액</h5>
+                        <p class="text-muted koreanRegular mb-0">기본 가격: 15,000원<br>배송비: 2,500원<br><br><b>총 결제 금액: 17,500원</b></p>
+                    </div>
+                </div>
+
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="agreement">
+                    <label class="form-check-label koreanRegular" for="agreement">
+                        개인정보 수집 및 이용에 동의합니다.
+                    </label>
+                </div>
+
+                <div class="text-center mt-4 d-flex justify-content-center gap-3 flex-wrap">
+                    <button type="button" class="btn btn-primary template-card2 koreanBold" onclick="location.href='myDelivery.html'">실물 상품 주문하기</button>
+                    <button type="button" class="btn btn-outline-primary template-card2 koreanBold" onclick="location.href='myFile.html'">PDF 파일 주문하기</button>
+                </div>
+            </form>
+
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-white py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto small koreanRegular">
+                Copyright &copy; 중앙대학교 예술공학대학 예술공학부 김도균(20225525) · 2025
+            </div>
+            <div class="col-auto koreanRegular">
+                tansan7271@cau.ac.kr &middot; <a class="small koreanRegular" href="support.html">고객지원</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
